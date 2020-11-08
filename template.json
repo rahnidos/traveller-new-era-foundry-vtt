@@ -1,0 +1,84 @@
+{
+  "Actor": {
+    "types":["character"],
+    "templates":{
+      "attributes": {
+        "attribute": {
+          "strength" : {
+            "label": "ATTRIBUTE.STRENGTH",
+            "value": 0,
+            "max": 0,
+            "min": 0
+          },
+          "agility":{
+            "label": "ATTRIBUTE.AGILITY",
+            "value": 0,
+            "max": 0,
+            "min": 0
+          },
+          "constitution": {
+            "label":"ATTRIBUTE.CONSTITUTION",
+            "value":0,
+            "max":0,
+            "min":0
+          },
+          "ingelligence":{
+            "label":"ATTRIBUTE.INTELLIGENCE",
+            "value":0,
+            "max":0,
+            "min":0
+          },
+          "education":{
+            "label":"ATTRIBUTE.EDUCATION",
+            "value":0,
+            "max":0,
+            "min":0
+          },
+          "charisma":{
+            "label":"ATTRIBUTE.CHARISMA",
+            "value":0,
+            "max":0,
+            "min":0
+          },
+          "psionics":{
+            "label":"ATTRIBUTE.PSIONICS",
+            "value":0,
+            "max":0,
+            "min":0
+          },
+          "social":{
+            "label":"ATTRIBUTE.SOCIAL",
+            "value":0,
+            "max":0,
+            "min":0
+          },
+          "initiative":{
+            "label":"ATTRIBUTE.INITATIVE",
+            "value":0,
+            "max":0,
+            "min":0
+          }
+        }
+      },
+      "skills":{
+        "skill":{
+          "archery":{
+            "label":"SKILL.ARCHERY",
+            "value":0,
+            "min":0,
+            "attribute":"strength"
+          }
+        }
+      }
+    },
+    "character":{
+      "templates": ["attributes", "skills"],
+      "bio":{
+        "name": {
+          "label":"BIO.NAME",
+          "value":""
+        }
+      }
+    }
+  }
+}

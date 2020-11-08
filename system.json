@@ -16,7 +16,7 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "resources.health",
   "secondaryTokenAttribute": "resources.power",
-  "url": "https://your/hosted/system/repo/",
-  "manifest": "https://your/hosted/system/repo/system.json",
-  "download": "https://your/packaged/download/archive.zip"
+  "url": "https://github.com/rahnidos/traveller-new-era-foundry-vtt",
+  "manifest": "https://github.com/rahnidos/traveller-new-era-foundry-vtt/main/system.json",
+  "download": "https://github.com/rahnidos/traveller-new-era-foundry-vtt/archive/main.zip"
 }
