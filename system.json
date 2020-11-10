@@ -1,14 +1,15 @@
 {
   "name": "tne",
-  "title": "Traveller New Era [unoffical]",
-  "description": "Unofficial system for playing Trveller New Era on Foundry VTT",
+  "title": "Traveller New Era",
+  "description": "The Traveller New Era system for FoundryVTT!",
   "version": "0.0.1",
-  "minimumCoreVersion": "0.6.6",
-  "compatibleCoreVersion": "0.7.3",
+  "minimumCoreVersion": "0.5.5",
+  "compatibleCoreVersion": "0.5.5",
   "templateVersion": 2,
   "author": "rahn niejasny",
-  "esmodules": ["module/simple.js"],
-  "styles": ["styles/simple.css"],
+  "esmodules": ["module/tne.js"],
+  "styles": ["css/tne.css"],
+  "scripts": [],
   "packs": [],
   "languages": [
     {
@@ -21,7 +22,8 @@
   "gridUnits": "m",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "url": "https://github.com/rahnidos/traveller-new-era-foundry-vtt",
-  "manifest": "https://raw.githubusercontent.com/rahnidos/traveller-new-era-foundry-vtt/main/system.json",
-  "download": "https://github.com/rahnidos/traveller-new-era-foundry-vtt/archive/0.0.1.zip"
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt"
 }
