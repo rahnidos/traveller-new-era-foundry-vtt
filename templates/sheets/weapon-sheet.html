@@ -1,0 +1,54 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+    <div class="sheet-content">
+      {{localize 'tne.weapon.attackWith'}}
+      <select name="data.attackWith">
+        {{#select data.attackWith}}
+        {{#each config.attackTypes as |name type|}}
+        <option value="{{type}}">{{localize name}}</option>
+        {{/each}}
+        {{/select}}
+      </select>
+      <table>
+        <tr>
+          <th></th>
+          <th colspan=3>{{localize "tne.weapon.damage"}}</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th colspan=2>{{localize "tne.weapon.recoil"}}</th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <th>{{localize "tne.weapon.rof_s"}}</th>
+          <th>{{localize "tne.weapon.short_s"}}</th>
+          <th>{{localize "tne.weapon.medium_s"}}</th>
+          <th>{{localize "tne.weapon.long_s"}}</th>
+          <th>{{localize "tne.weapon.penetration_s"}}</th>
+          <th>{{localize "tne.weapon.blk_s"}}</th>
+          <th>{{localize "tne.weapon.mag_s"}}</th>
+          <th>{{localize "tne.weapon.ss_s"}}</th>
+          <th>{{localize "tne.weapon.bst"}}</th>
+          <th>{{localize "tne.weapon.range_s"}}</th>
+        </tr>
+        <tr>
+          <td class='shortAttribInput'><input name="data.rof" type="text" value="{{data.rof}}" data-dtype="Text" ></td>
+          <td class='shortAttribInput'><input name="data.damage.short" type="text" value="{{data.damage.short}}" data-dtype="Number"></td>
+          <td class='shortAttribInput'><input name="data.damage.medium" type="text" value="{{data.damage.medium}}" data-dtype="Number"></td>
+          <td class='shortAttribInput'><input name="data.damage.long" type="text" value="{{data.damage.long}}" data-dtype="Number"></td>
+          <td class='shortAttribInput'><input name="data.penetration" type="text" value="{{data.penetration}}" data-dtype="Number"></td>
+          <td class='shortAttribInput'><input name="data.blk" type="text" value="{{data.blk}}" data-dtype="Number"></td>
+          <td class='shortAttribInput'><input name="data.mag" type="text" value="{{data.mag}}" data-dtype="Number"></td>
+          <td class='shortAttribInput'><input name="data.recoil.ss" type="text" value="{{data.recoil.ss}}" data-dtype="Number"></td>
+          <td class='shortAttribInput'><input name="data.recoil.bst" type="text" value="{{data.recoil.bst}}" data-dtype="Number"></td>
+          <td class='shortAttribInput'><input name="data.range" type="text" value="{{data.range}}" data-dtype="Number"></td>
+        </tr>
+      </table>
+      {{editor content=data.description target="data.description" button=true owner=owner editable=editable}}
+
+    </div>
+</form>

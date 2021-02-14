@@ -1,61 +1,91 @@
 {
-  "Actor": {
-    "types": ["character"],
-    "templates": {
-      "base": {
-        "health": {
-          "value": 10,
-          "min": 0,
-          "max": 10
-        },
-        "power": {
-          "value": 5,
-          "min": 0,
-          "max": 5
+  "Actor":{
+    "types":[
+      "character",
+      "inpc",
+      "npc"
+    ],
+    "templates":{
+      "common":{
+        "firstName":"",
+        "surname":"",
+        "callsign":"",
+        "gender":"",
+        "age":0,
+        "homeworld":"",
+        "stellarRegion":"",
+        "occupation":"",
+        "rank":"",
+        "initiative":0
+      },
+      "iCharacter":{
+        "attributes":{
+          "strength":0,
+          "agility":0,
+          "condition":0,
+          "inteligence":0,
+          "education":0,
+          "charisma":0,
+          "social":0,
+          "psi":0
         }
       }
     },
     "character": {
-      "templates": ["base"],
-      "biography": "",
-      "attributes": {
-        "level": {
-          "value": 1
-        }
-      },
-      "abilities": {
-        "str": {
-          "value": 10
-        },
-        "dex": {
-          "value": 10
-        },
-        "con": {
-          "value": 10
-        },
-        "int": {
-          "value": 10
-        },
-        "wis": {
-          "value": 10
-        },
-        "cha": {
-          "value": 10
-        }
-      }
+      "templates":[
+        "common",
+        "iCharacter"
+      ],
+      "player":""
+    },
+    "inpc": {
+      "templates":[
+        "common",
+        "iCharacter"
+      ]
+    },
+    "npc": {
+      "templates":[
+        "common"
+      ]
     }
+
   },
-  "Item": {
-    "types": ["item"],
+  "Item":{
+    "types":[
+      "weapon",
+      "spaceship"
+    ],
     "templates": {
-      "base": {
-        "description": ""
+      "itemDescription":{
+        "description":""
       }
     },
-    "item": {
-      "templates": ["base"],
-      "quantity": 1,
-      "weight": 0
+    "weapon":{
+      "templates":[
+        "itemDescription"
+      ],
+      "attackWith":"",
+      "rof":"",
+      "damage":{
+        "short":0,
+        "medium":0,
+        "long":0
+      },
+      "penetration":0,
+      "mag":0,
+      "range":0,
+      "recoil":{
+        "ss":0,
+        "bst":0
+      },
+      "blk":0
+    },
+    "spaceship":{
+      "templates":[
+        "itemDescription"
+      ],
+      "name":""
     }
   }
 }

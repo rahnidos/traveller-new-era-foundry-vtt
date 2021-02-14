@@ -1,0 +1,50 @@
+{
+  "tne": {
+    "attack": {
+      "none":"none",
+      "slugWeaponShort":"Slug Weapon Short",
+      "slugWeaponLong":"Slug Weapon Long"
+    },
+    "weapon": {
+    "attackWith":"Attack With",
+    "rof":"Rate Of Fire",
+    "rof_s":"ROF",
+    "damage":"Damage",
+    "damage_s":"DMG",
+    "short":"short",
+    "short_s":"S",
+    "medium":"medium",
+    "medium_s":"M",
+    "long":"long",
+    "long_s":"L",
+    "penetration":"penetration",
+    "penetration_s":"Pen",
+    "mag":"Magazine",
+    "mag_s":"Mag",
+    "range":"Range",
+    "range_s":"RNG",
+    "recoil":"Recoil",
+    "ss":"single shot",
+    "ss_s":"SS",
+    "bst":"Burst",
+    "bst_s":"BST",
+    "blk":"Bulk",
+    "blk_s":"BLK"
+    },
+    "actor":{
+      "player":"Player",
+      "character":"Character",
+      "firstName":"Firstname",
+      "callsign":"Callsign",
+      "surname":"Surname",
+      "gender":"Gender",
+      "age":"Age",
+      "race":"Race",
+      "homeworld":"Homeworld",
+      "stellarRegion":"Stellar region",
+      "occupation":"Occupation",
+      "rank":"Rank"
+    }
+
+  }
+}

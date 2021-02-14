@@ -1,0 +1,25 @@
+{
+  "dupa":"dupakwas",
+  "tne": {
+    "attack": {
+      "none":"żaden",
+      "slugWeaponShort":"Slug Weapon Short",
+      "slugWeaponLong":"Slug Weapon Long"
+    },
+    "weapon": {
+    "attackWith":"Attack With",
+    "rof":"Rate Of Fire",
+    "damage":"damage",
+    "short":"short",
+    "medium":"medium",
+    "long":"long",
+    "penetration":"penetration",
+    "mag":"mag",
+    "range":"range",
+    "recoil":"recoil",
+    "ss":"single shot",
+    "bst":"burst",
+    "blk":"blk"
+    }
+  }
+}

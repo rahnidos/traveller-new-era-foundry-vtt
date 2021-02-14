@@ -1,0 +1,70 @@
+<form class="{{cssClass}}" autocomplete="off">
+  <div class="topbar">
+    <div class="infobox">
+      <div class="leftinfobox">
+        <table class="infoTable">
+          <tr class="infoRowGray">
+            <td></td>
+            <td class="infoDivHelp">{{localize "tne.actor.firstName"}}</td>
+            <td class="infoDivHelp">{{localize "tne.actor.callsign"}}</td>
+            <td class="infoDivHelp">{{localize "tne.actor.surname"}}</td>
+            {{#if (eq actor.type "character")}}
+            <td></td><td></td>
+            {{/if}}
+          </tr>
+          <tr class="infoRowGray">
+            <td class="infoDivLabel">{{localize "tne.actor.character"}}:</td>
+            <td class="infoDivValue" data-edit="data.firstName" contenteditable>
+              {{data.firstName}}
+            </td>
+            <td class="infoDivValue" data-edit="data.callsign" contenteditable>
+              {{data.callsign}}
+            </td>
+            <td class="infoDivValue" data-edit="data.surname" contenteditable>
+              {{data.surname}}
+            </td>
+            {{#if (eq actor.type "character")}}
+            <td class="infoDivLabel">
+              {{localize "tne.actor.player"}}:
+            </td>
+            <td class="infoDivValue" data-edit="data.player" contenteditable>
+              {{data.player}}
+            </td>
+            {{/if}}
+          </tr>
+        </table>
+        <div class="infoDivGray">
+          <div class="infoDivLabel irow6">{{localize "tne.actor.gender"}}:</div>
+          <div class="infoDivValue irow6" data-edit="data.gender" contenteditable>{{data.gender}}</div>
+          <div class="infoDivLabel irow6">{{localize "tne.actor.age"}}:</div>
+          <div class="infoDivValue irow6" data-edit="data.age" contenteditable>{{data.age}}</div>
+          <div class="infoDivLabel irow6">{{localize "tne.actor.race"}}:</div>
+          <div class="infoDivValue irow6" data-edit="data.race" contenteditable>{{data.race}}</div>
+        </div>
+        <div class="infoDivGray">
+          <div class="infoDivLabel irow4">{{localize "tne.actor.homeworld"}}:</div>
+          <div class="infoDivValue irow4" data-edit="data.homeworld" contenteditable>{{data.homeworld}}</div>
+          <div class="infoDivLabel irow4">{{localize "tne.actor.stellarRegion"}}:</div>
+          <div class="infoDivValue irow4" data-edit="data.stellarRegion" contenteditable>{{data.stellarRegion}}</div>
+        </div>
+        <div class="infoDivGray">
+          <div class="infoDivLabel irow4">{{localize "tne.actor.occupation"}}:</div>
+          <div class="infoDivValue irow4" data-edit="data.occupation" contenteditable>{{data.occupation}}</div>
+          <div class="infoDivLabel irow4">{{localize "tne.actor.rank"}}:</div>
+          <div class="infoDivValue irow4" data-edit="data.rank" contenteditable>{{data.rank}}</div>
+        </div>
+        <div class="attributes">
+          {{> "systems/tne/templates/partials/attributes-stat-block.hbs"}}
+          <section class="weapon-list">
+            {{#each weapons as |weapon id|}}
+            {{> "systems/tne/templates/partials/weapon-card.hbs" weapon}}
+            {{/each}}
+          </section>
+        </div>
+      </div>
+      <div class="rightinfobox">
+      <img src="{{actor.img}}" class="actor-img" data-edit="img" title="{{actor.name}}"/>
+      </div>
+    </div>
+  </div>
+</form>
