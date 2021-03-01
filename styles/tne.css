@@ -26,6 +26,7 @@
 }
 .tne.sheet.iCharacter .infoTable {
   width: 100%;
+  margin-top: 0;
 }
 .tne.sheet.iCharacter .infoRowGray {
   background-color: #666;
@@ -57,4 +58,21 @@
 }
 .tne.sheet.iCharacter .irow4 {
   width: 25%;
+}
+.attribValueCell {
+  width: 20px;
+  text-align: center;
+}
+.attribNameCell {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10px;
+  background-color: #666;
+  color: #f1f1f1;
+}
+.attribTitle {
+  text-transform: uppercase;
+  color: #f1f1f1;
+  background-color: #666;
+  text-align: center;
 }

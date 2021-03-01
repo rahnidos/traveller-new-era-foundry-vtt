@@ -43,7 +43,46 @@
       "homeworld":"Homeworld",
       "stellarRegion":"Stellar region",
       "occupation":"Occupation",
-      "rank":"Rank"
+      "rank":"Rank",
+      "attributestitle":"attributes",
+      "attributes":{
+        "strength": {
+          "full":"Strength",
+          "short":"STR"
+        },
+        "agility": {
+          "full":"Agility",
+          "short":"AGL"
+        },
+        "constitution": {
+          "full":"Constitution",
+          "short":"CON"
+        },
+        "inteligence": {
+          "full":"Inteligence",
+          "short":"INT"
+        },
+        "education": {
+          "full":"Education",
+          "short":"EDU"
+        },
+        "charisma": {
+          "full":"Charisma",
+          "short":"CHR"
+        },
+        "psi":{
+          "full":"Psionic Strength",
+          "short":"PSI"
+        },
+        "social":{
+          "full":"Social",
+          "short":"SOC"
+        },
+        "initiative":{
+          "full":"Initiative",
+          "short":"Initiative"
+        }
+      }
     }
 
   }
